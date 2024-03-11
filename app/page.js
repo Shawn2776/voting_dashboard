@@ -1,9 +1,18 @@
-import Image from "next/image";
+import OrgCountChart from "@/components/OrgCountChart";
+import React from "react";
 
-export default function Home() {
+const DashboardPage = () => {
   return (
-    <main className="min-h-screen text-white">
-      <div className="flex justify-evenly w-full min-h-screen">Dashboard</div>
-    </main>
+    <div className="flex flex-col w-full pt-10 pl-10 text-white">
+      <div className="flex items-center justify-center w-full">
+        <h1 className="justify-center text-2xl">Dashboard</h1>
+      </div>
+      <div className="flex justify-start w-1/2 pl-10 border">
+        <h2 className="text-xl">Organization Count</h2>
+        <OrgCountChart />
+      </div>
+    </div>
   );
-}
+};
+
+export default DashboardPage;

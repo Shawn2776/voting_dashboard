@@ -21,9 +21,9 @@ const OrgCard = ({
   };
 
   return (
-    <div className="shadow-xl card w-96 bg-primary text-white">
+    <div className="text-white transition duration-300 shadow-xl card w-96 bg-primary hover:bg-accent hover:shadow-md hover:shadow-black hover:text-black hover:cursor-pointer">
       <div className="card-body">
-        <h2 className="card-title whitespace-nowrap underline">{name}</h2>
+        <h2 className="underline card-title whitespace-nowrap">{name}</h2>
         <p>
           <em>
             <a href={`https://www.${domain}`} target="_blank">

@@ -17,19 +17,21 @@ export default function RootLayout({ children }) {
         className={`${inter.className} bg-secondary text-base-100 min-h-screen`}
       >
         <Navbar />
-        <div className="min-h-screen flex">
-          <div className="w-[15%] border-r-2 border-slate-500 min-h-screen pt-10">
-            <Link href="/" className="btn btn-ghost text-xl text-white ml-10">
+        <div className="min-h-screen flex pt-[4rem]">
+          {" "}
+          {/* Adjust the padding-top based on the height of your Navbar */}
+          <div className="fixed top-[4rem] left-0 w-[15%] border-r-2 border-slate-500 h-[calc(100vh-4rem)] pt-10">
+            <Link href="/" className="ml-10 text-xl text-white btn btn-ghost">
               Dashboard
             </Link>
             <Link
               href="/organizations"
-              className="btn btn-ghost text-xl text-white ml-10"
+              className="ml-10 text-xl text-white btn btn-ghost"
             >
               Organizations
             </Link>
           </div>
-          <div className="w-[85%] min-h-screen">{children}</div>
+          <div className="w-[85%] min-h-screen pl-[15%]">{children}</div>
         </div>
       </body>
     </html>

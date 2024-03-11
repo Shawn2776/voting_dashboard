@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-primary text-white border-b-2 border-slate-500">
+    <div className="fixed top-0 left-0 right-0 z-50 text-white border-b-2 navbar bg-primary border-slate-500">
       <div className="flex-1">
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="text-xl btn btn-ghost">
           <span className="text-red-500">SMRT</span>eVote
         </Link>
       </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
+            className="w-24 input input-bordered md:w-auto"
           />
         </div>
         <div className="dropdown dropdown-end">
